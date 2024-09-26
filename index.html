@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutti Fast</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startGame()">
+    <header>
+        <h1>Tutti Fast</h1>
+        <h2>Tienes 30 segundos para completar el juego con la siguiente letra:</h2>
+        <h3 id="letter"></h3>
+        <h4 id="counter"></h4>
+    </header>
+    <main>
+        <form id="gameForm">
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" required autocomplete="off">
+            </div>
+            <div>
+                <label for="color">Color:</label>
+                <input type="text" id="color" required autocomplete="off">
+            </div>
+            <div>
+                <label for="food">Comida:</label>
+                <input type="text" id="food" required autocomplete="off">
+            </div>
+            <div>
+                <label for="animal">Animal:</label>
+                <input type="text" id="animal" required autocomplete="off">
+            </div>
+            <div>
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" required autocomplete="off">
+            </div>
+            <div>
+                <button id="submit" type="submit">Completar</button>
+                <button type="button" onclick="location.reload()">Reiniciar</button>
+            </div>
+        </form>
+    </main>
+    <audio type="audio/mpeg" id="audio"></audio>
+</body>
+</html>

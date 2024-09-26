@@ -1,0 +1,98 @@
+:root {
+    --rosa: #ff819e;
+    --verde: #b2ff66;
+    --amarillo: #ffea00;
+    --naranja: #e78b00;
+    --azul: #0099ff;
+    --morado: #ecc8ec;
+    --rojo: #ff3d00;
+}
+
+body {
+    background-color: var(--rosa);
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    color: var(--amarillo);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+    background-color: var(--azul);
+    width: fit-content;
+    margin: auto;
+    padding: 0 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h1, h2, h4 {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: right;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: var(--azul);
+    color: var(--morado);
+    font-size: 1.2rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--morado);
+    color: var(--naranja);
+}
+
+button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: var(--naranja);
+    color: var(--morado);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--amarillo);
+    color: var(--rosa);
+}
+
+button:disabled {
+    background-color: var(--morado);
+    color: var(--naranja);
+    cursor: not-allowed;
+}
